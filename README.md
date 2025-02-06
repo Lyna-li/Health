@@ -1,21 +1,19 @@
-# pfe_project
+# Authentication and Registration Pages
 
-A new Flutter project.
+This project includes a simple authentication and registration system for users(doctor,patient). The system allows users to register an account and log in to access the main features of the application.
 
-## Getting Started
+## Features
 
-
-
-![App Screenshot](password.jpg)
-
-This project is a starting point for a Flutter application.
+- **User Registration**: Allows users to sign up with their details.
+- **User Authentication**: Provides login functionality to authenticate users with their registered credentials.
 
 
-A few resources to get you started if this is your first Flutter project:
+## ScreenShots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Register 
+<img src="password.jpg" alt="password Screenshot" width="300"/>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
