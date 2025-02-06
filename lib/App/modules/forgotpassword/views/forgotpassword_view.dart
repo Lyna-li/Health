@@ -43,9 +43,9 @@ class ForgotpasswordView extends GetView<ForgotpasswordController>{
               ),),
 
             SizedBox(height: 100),
-            Information(hint: "Mot De Passe", controller:emailcontroller,  icon: Icon(Icons.lock_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary),
+            Information(hint: "Mot De Passe",keyboardType: TextInputType.visiblePassword,obscureText: true, controller:emailcontroller,  icon: Icon(Icons.lock_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary),
             SizedBox(height: 20),
-            Information(hint: "Confirme Mot De Passe", controller:passwordcontroller,  icon: Icon(Icons.lock_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary),
+            Information(hint: "Confirme Mot De Passe", keyboardType: TextInputType.visiblePassword,obscureText: true,controller:passwordcontroller,  icon: Icon(Icons.lock_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary),
            
             SizedBox(height: 50),
             CustomButton(text: "Créer un nouveaux ", onPressed:(){},backgroundColor: AppColors.primary

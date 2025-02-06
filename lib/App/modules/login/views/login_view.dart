@@ -40,12 +40,12 @@ class LoginView extends GetView<LoginController>{
           children: [
             
             Image.asset(
-              "assets/images/register.png",
-              width: 150,
-              height: 150,
+              "assets/images/apA.png",
+              width: 190,
+              height: 190,
               fit: BoxFit.cover,
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 40),
             CustomTitle(text:"Se Connecter"),
              SizedBox(height: 20),
              Text("Bienvennue Enter votre information Pour se Connecter",style: TextStyle(fontWeight: FontWeight.w300,fontSize:12,fontFamily: "League"
@@ -53,9 +53,9 @@ class LoginView extends GetView<LoginController>{
             
              
             SizedBox(height: 50),
-            Information(hint: "Email ou Num telephone", controller:emailcontroller,  icon: Icon(Icons.person_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary),
+            Information(hint: "Email ou Num telephone",keyboardType: TextInputType.text,obscureText: false, controller:emailcontroller,  icon: Icon(Icons.person_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary),
             SizedBox(height: 20),
-            Information(hint: "Mot De Passe", controller:passwordcontroller,  icon: Icon(Icons.lock_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary,),
+            Information(hint: "Mot De Passe", controller:passwordcontroller, keyboardType: TextInputType.visiblePassword,obscureText: true, icon: Icon(Icons.lock_outline,color: AppColors.primary,),backgroundColor: AppColors.secondary,),
             Row(mainAxisAlignment:MainAxisAlignment.end,
             children: [
               Padding(

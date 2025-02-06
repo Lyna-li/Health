@@ -11,6 +11,8 @@ class Information extends StatelessWidget {
   final double height;
   final Widget icon;
   final Color? iconcolor;
+  final TextInputType keyboardType;
+  final bool obscureText;
 
   const Information({
     super.key,
@@ -22,6 +24,8 @@ class Information extends StatelessWidget {
     this.width = 350,
     this.height = 60,
     required this.icon,
+    required this.keyboardType,
+    required this.obscureText,
   });
 
   @override
@@ -38,8 +42,11 @@ class Information extends StatelessWidget {
         child: TextField(
               controller: controller, 
               cursorColor:AppColors.primary,
+              keyboardType:keyboardType,
+              obscureText: obscureText,
               decoration: InputDecoration(
                 hintText: hint,
+                
                 hintStyle: TextStyle(color: textColor,fontWeight: FontWeight.w200,fontSize: 14,fontFamily: "League"),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),

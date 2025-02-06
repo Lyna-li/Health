@@ -26,9 +26,9 @@ class RegisterView extends GetView<RegisterController> {
               CrossAxisAlignment.center, // Center everything horizontally
           children: [
             Image.asset(
-              "assets/images/register.png",
-              width: 150,
-              height: 150,
+              "assets/images/apA.png",
+              width: 170,
+              height: 170,
               fit: BoxFit.cover,
             ),
             Text(

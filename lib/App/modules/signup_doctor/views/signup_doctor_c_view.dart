@@ -52,6 +52,8 @@ class Signup_doctor_cView extends GetView<Signup_docotr_cController> {
                   SizedBox(height: 40),
                   Information(
                       hint: "Num de CNRC",
+                      keyboardType: TextInputType.text,
+                      obscureText: false,
                       controller: matriculecontroller,
                       icon: Icon(
                         Icons.badge_outlined,
@@ -61,6 +63,8 @@ class Signup_doctor_cView extends GetView<Signup_docotr_cController> {
                   SizedBox(height: 20),
                   Information(
                     hint: "Nom De Cabinet",
+                    keyboardType: TextInputType.text,
+                      obscureText: false,
                     controller: hopitalcontroller,
                     icon: Icon(
                       Icons.health_and_safety,
@@ -73,6 +77,8 @@ class Signup_doctor_cView extends GetView<Signup_docotr_cController> {
                   ),
                   Information(
                       hint: "Wilaya",
+                      keyboardType: TextInputType.text,
+                      obscureText: false,
                       controller: wilayacontroller,
                       icon: Icon(
                         Icons.arrow_drop_down_outlined,
@@ -84,6 +90,8 @@ class Signup_doctor_cView extends GetView<Signup_docotr_cController> {
                   ),
                   Information(
                       hint: "Cité",
+                      keyboardType: TextInputType.text,
+                      obscureText: false,
                       controller: wilayacontroller,
                       icon: Icon(
                         Icons.arrow_drop_down_outlined,
@@ -94,6 +102,8 @@ class Signup_doctor_cView extends GetView<Signup_docotr_cController> {
                   SizedBox(height: 20),
                   Information(
                     hint: "Specailité",
+                    keyboardType: TextInputType.text,
+                    obscureText: false,
                     controller: speacialitecontroller,
                     icon: Icon(
                       Icons.medication,
@@ -104,6 +114,8 @@ class Signup_doctor_cView extends GetView<Signup_docotr_cController> {
                     SizedBox(height: 20),
                    Information(
                     hint: "Num de Téléphone",
+                    keyboardType: TextInputType.phone,
+                    obscureText: false,
                     controller: numberphonecontroller,
                     icon: Icon(
                       Icons.call_outlined,

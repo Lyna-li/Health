@@ -50,6 +50,8 @@ class Signup_doctor_hView extends GetView<Signup_docotr_hController> {
                   SizedBox(height: 40),
                   Information(
                       hint: "Matricule",
+                      keyboardType: TextInputType.number,
+                      obscureText: false,
                       controller: matriculecontroller,
                       icon: Icon(
                         Icons.badge_outlined,
@@ -59,6 +61,8 @@ class Signup_doctor_hView extends GetView<Signup_docotr_hController> {
                   SizedBox(height: 20),
                   Information(
                     hint: "Nom De L’hopitale",
+                    keyboardType: TextInputType.text,
+                      obscureText: false,
                     controller: hopitalcontroller,
                     icon: Icon(
                       Icons.health_and_safety,
@@ -71,6 +75,8 @@ class Signup_doctor_hView extends GetView<Signup_docotr_hController> {
                   ),
                   Information(
                       hint: "Wilaya",
+                      keyboardType: TextInputType.text,
+                      obscureText: false,
                       controller: wilayacontroller,
                       icon: Icon(
                         Icons.arrow_drop_down_outlined,
@@ -80,6 +86,8 @@ class Signup_doctor_hView extends GetView<Signup_docotr_hController> {
                   SizedBox(height: 20),
                   Information(
                     hint: "Specailité",
+                    keyboardType: TextInputType.text,
+                      obscureText: false,
                     controller: speacialitecontroller,
                     icon: Icon(
                       Icons.medication,

@@ -49,6 +49,8 @@ class Signup_doctorView extends GetView<Signup_docotrController> {
                   SizedBox(height: 40),
                   Information(
                       hint: "Nom Et Prénom",
+                      keyboardType: TextInputType.text,
+                      obscureText: false,
                       controller: usernamecontroller,
                       icon: Icon(
                         Icons.person_outline,
@@ -58,6 +60,8 @@ class Signup_doctorView extends GetView<Signup_docotrController> {
                   SizedBox(height: 20),
                   Information(
                     hint: "Mot De Passe",
+                    keyboardType: TextInputType.visiblePassword,
+                      obscureText: true,
                     controller: passwordcontroller,
                     icon: Icon(
                       Icons.lock_outline,
@@ -70,6 +74,8 @@ class Signup_doctorView extends GetView<Signup_docotrController> {
                   ),
                   Information(
                       hint: "Email",
+                      keyboardType: TextInputType.emailAddress,
+                      obscureText: false,
                       controller: emailcontroller,
                       icon: Icon(
                         Icons.email_outlined,
@@ -79,6 +85,8 @@ class Signup_doctorView extends GetView<Signup_docotrController> {
                   SizedBox(height: 20),
                   Information(
                     hint: "Num de Téléphone",
+                    keyboardType: TextInputType.phone,
+                      obscureText: false,
                     controller: numberphonecontroller,
                     icon: Icon(
                       Icons.call_outlined,
@@ -91,6 +99,8 @@ class Signup_doctorView extends GetView<Signup_docotrController> {
                   ),
                   Information(
                       hint: "Date De Naissance",
+                      keyboardType: TextInputType.datetime,
+                      obscureText: false,
                       controller: birthdaycontroller,
                       icon: Icon(
                         Icons.calendar_month_outlined,
@@ -100,6 +110,8 @@ class Signup_doctorView extends GetView<Signup_docotrController> {
                   SizedBox(height: 20),
                   Information(
                     hint: "Adresse",
+                    keyboardType: TextInputType.streetAddress,
+                      obscureText: false,
                     controller: adressecontroller,
                     icon: Icon(
                       Icons.location_on_outlined,

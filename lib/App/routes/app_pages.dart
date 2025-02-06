@@ -4,9 +4,6 @@
 
 import 'package:get/get.dart';
 
-import 'package:pfe_project/App/modules/splash/bindings/splash_binding.dart';
-import 'package:pfe_project/App/modules/splash/views/splash_view.dart';
-
 import 'package:pfe_project/App/modules/register/bindings/register_binding.dart';
 import 'package:pfe_project/App/modules/register/views/register_view.dart';
 
@@ -35,7 +32,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = _Paths.SPLASH;
+  static const INITIAL = _Paths.REGISTER;
 
   static final routes = [
     // GetPage(
@@ -43,11 +40,7 @@ class AppPages {
     //   page: () =>  HomeView(),
     //   binding: HomeBinding(),
     // ),
-    GetPage(
-      name: _Paths.SPLASH,
-      page: () => SplashView(),
-      binding: SplashBinding(),
-    ),
+    
 
     GetPage(
       name: _Paths.REGISTER,
